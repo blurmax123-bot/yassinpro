@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YASSIN PRO | Génie Civil & Décoration - Meknès / Fès</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8f9fc;color:#1a1a1a;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+html{scroll-behavior:smooth}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 5%;background:rgba(255,255,255,.95);position:sticky;top:0;z-index:10;border-bottom:1px solid #eee}
+.logo-wrap{display:flex;align-items:center;gap:11px}
+.logo-icon{width:48px;height:48px;background:linear-gradient(135deg,#ff6a00,#ff9a00);border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:20px}
+.logo-text{line-height:1}.logo-text b{font-size:22px}.logo-text b span{color:#ff6a00}.logo-text small{display:block;font-size:9px;letter-spacing:3px;color:#666;font-weight:700}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px;font-weight:500}
+nav ul li a:hover{color:#ff6a00}
+.btn{background:#ff6a00;color:#fff;padding:11px 22px;border-radius:50px;font-weight:600;border:0;cursor:pointer;display:inline-block}
+.btn2{background:#111;color:#fff;padding:11px 22px;border-radius:50px;font-weight:600;border:0;cursor:pointer;display:inline-block}
+.hero{display:flex;flex-wrap:wrap;gap:30px;padding:45px 5%;align-items:center}
+.hero-text{flex:1;min-width:300px}
+.badge{background:#fff0e6;color:#ff6a00;padding:8px 15px;border-radius:50px;font-size:13px;font-weight:600;border:1px solid #ffd9b8;display:inline-block}
+.hero h1{font-size:52px;line-height:1.05;margin:18px 0}.hero h1 span{color:#ff6a00}
+.hero p{color:#64748b;line-height:1.7}
+.hero-btns{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.stats{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.stat{background:#fff;border:1px solid #eee;padding:14px 18px;border-radius:16px;min-width:110px}
+.stat b{font-size:22px}
+.hero-img{flex:1;min-width:300px;position:relative}
+.hero-img img{width:100%;height:390px;object-fit:cover;border-radius:28px}
+.float-card{position:absolute;bottom:18px;left:18px;right:18px;background:rgba(255,255,255,.95);padding:14px;border-radius:16px;display:flex;justify-content:space-between;align-items:center}
+.section{padding:45px 5%}
+.title{font-size:30px;margin-bottom:8px}.title span{color:#ff6a00}
+.sub{color:#64748b;margin-bottom:25px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #eee;border-radius:22px;padding:20px}
+.card p{font-size:13.5px;color:#64748b;line-height:1.6}
+.price{color:#ff6a00;font-weight:800;margin-top:10px}
+.deco-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.deco-filter button{padding:9px 18px;border-radius:50px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:600}
+.deco-filter button.active{background:#111;color:#fff}
+.deco-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.deco-card{background:#fff;border-radius:22px;overflow:hidden;border:1px solid #eee}
+.deco-card img{width:100%;height:220px;object-fit:cover}
+.deco-card .info{padding:16px}
+.tag{display:inline-block;background:#fff0e6;color:#ff6a00;font-size:11px;font-weight:700;padding:4px 10px;border-radius:50px}
+.deco-price{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:700px){.calc{grid-template-columns:1fr}.hero h1{font-size:36px}nav ul{display:none}}
+.calc-box{background:#fff;border:1px solid #eee;border-radius:22px;padding:22px}
+label{font-size:13px;font-weight:600;display:block;margin-top:12px}
+input,select{width:100%;padding:12px;border:1px solid #e2e8f0;border-radius:12px;margin-top:5px;font-size:15px;background:#f8fafc}
+.result{margin-top:18px;background:#222;color:#fff;padding:16px;border-radius:14px;line-height:1.8}
+.result b{color:#ffcc00}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.proj div{border-radius:22px;overflow:hidden;position:relative;height:230px}
+.proj img{width:100%;height:100%;object-fit:cover}
+.proj span{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.85));padding:35px 15px 15px;font-weight:700;color:#fff}
+footer{background:#111;color:#94a3b8;padding:35px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;font-size:13px;border-radius:30px 30px 0 0;margin-top:20px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;z-index:20}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo-wrap">
+    <div class="logo-icon">YP</div>
+    <div class="logo-text"><b>YASSIN <span>PRO</span></b><small>GÉNIE CIVIL • DÉCORATION</small></div>
+  </div>
+  <ul>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#deco">Décoration</a></li>
+    <li><a href="#devis">Calculateur</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/212779462764" target="_blank"><button class="btn">📞 +212 779 462 764</button></a>
+</nav>
+
+<section class="hero" id="accueil">
+  <div class="hero-text">
+    <span class="badge">✦ YASSIN PRO - Meknès / Fès - Bâtiment & Décoration</span>
+    <h1>Nbniw Lik<br><span>Dar L'Ahlam</span><br>B Style Moderne.</h1>
+    <p>Men l'fondation 7tal décoration - <b>YASSIN PRO</b> m3ak f <b>Meknès & Fès</b> : Plan, gros œuvre, finition, w décoration intérieure 3asriya.</p>
+    <div class="hero-btns">
+      <a href="#devis" class="btn">🧮 Calculer Béton</a>
+      <a href="#deco" class="btn2">🎨 Voir Décoration</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>120+</b><br><small>Projets à Meknès / Fès</small></div>
+      <div class="stat"><b>15 Ans</b><br><small>Expérience</small></div>
+      <div class="stat"><b>98%</b><br><small>Clients Satisfaits</small></div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900" alt="Chantier">
+    <div class="float-card"><div><b>🔥 Offre YASSIN PRO - Meknès / Fès</b><br><small style="color:#64748b">Plan 3D + Déco Offerte à -30%</small></div><a href="https://wa.me/212779462764" target="_blank" class="btn" style="padding:8px 16px">Profiter</a></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2 class="title">Nos <span>Services</span> 🛠️ - Meknès / Fès</h2>
+  <p class="sub">Ga3 dakchi li khassek bach tbni f Meknès w Fès, f blassa wa7da.</p>
+  <div class="grid3">
+    <div class="card"><div style="font-size:38px">📐</div><h3>Plan & Architecture</h3><p>Plan 2D / 3D, design moderne, permis de construire Meknès / Fès.</p><div class="price">À partir de 2 500 DH</div></div>
+    <div class="card"><div style="font-size:38px">🏗️</div><h3>Gros Œuvre</h3><p>Fondation, poteaux, dalles, béton armé, normes parasismiques.</p><div class="price">À partir de 1 800 DH / m²</div></div>
+    <div class="card"><div style="font-size:38px">🔌</div><h3>Électricité & Plomberie</h3><p>Installation complète, domotique, énergie solaire.</p><div class="price">Sur Devis</div></div>
+    <div class="card"><div style="font-size:38px">🎨</div><h3>Finition & Décoration</h3><p>Carrelage, peinture, plâtre, cuisine moderne, déco 3D.</p><div class="price">À partir de 800 DH / m²</div></div>
+  </div>
+</section>
+
+<section class="section" id="deco" style="background:#fff;border-radius:30px;margin:0 15px;border:1px solid #eee">
+  <h2 class="title">Décoration <span>Intérieure</span> ✨🎨</h2>
+  <p class="sub">Salon, chambre, cuisine, salle de bain - design 3asri. Meknès / Fès</p>
+  <div class="deco-filter">
+    <button class="active" onclick="filterDeco('all',this)">Tout</button>
+    <button onclick="filterDeco('salon',this)">🛋️ Salon</button>
+    <button onclick="filterDeco('cuisine',this)">🍳 Cuisine</button>
+    <button onclick="filterDeco('chambre',this)">🛏️ Chambre</button>
+    <button onclick="filterDeco('sdb',this)">🛁 Salle de Bain</button>
+  </div>
+  <div class="deco-grid">
+    <div class="deco-card" data-cat="salon"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700"><div class="info"><span class="tag">SALON MODERNE</span><h3>Salon Luxe - Style Marocain Moderne</h3><p>Canapé beige, éclairage LED, mur TV en marbre.</p><div class="deco-price"><b>15 000 DH</b><button class="btn" style="padding:7px 14px;font-size:13px" onclick="choisir('Salon Luxe')">Choisir →</button></div></div></div>
+    <div class="deco-card" data-cat="cuisine"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=700"><div class="info"><span class="tag">CUISINE</span><h3>Cuisine Moderne - Noir & Bois</h3><p>Cuisine équipée, îlot central, rangement intelligent.</p><div class="deco-price"><b>25 000 DH</b><button class="btn" style="padding:7px 14px;font-size:13px" onclick="choisir('Cuisine Moderne')">Choisir →</button></div></div></div>
+    <div class="deco-card" data-cat="chambre"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=700"><div class="info"><span class="tag">CHAMBRE</span><h3>Chambre Parentale - Hôtel 5★</h3><p>Tête de lit capitonnée, LED, dressing, ambiance calme.</p><div class="deco-price"><b>18 000 DH</b><button class="btn" style="padding:7px 14px;font-size:13px" onclick="choisir('Chambre Parentale')">Choisir →</button></div></div></div>
+    <div class="deco-card" data-cat="sdb"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700"><div class="info"><span class="tag">SALLE DE BAIN</span><h3>Salle de Bain Spa - Marbre</h3><p>Douche italienne, marbre, miroir LED, vasque suspendue.</p><div class="deco-price"><b>14 000 DH</b><button class="btn" style="padding:7px 14px;font-size:13px" onclick="choisir('Salle de Bain Spa')">Choisir →</button></div></div></div>
+  </div>
+</section>
+
+<section class="section" id="devis">
+  <h2 class="title">Calculateur <span>YASSIN PRO</span> 🧮</h2>
+  <p class="sub">7seb ch7al ghadi y9am 3lik béton, ciment, ferraillage w prix.</p>
+  <div class="calc">
+    <div class="calc-box">
+      <h3>📦 Calcul Béton / Dalle</h3>
+      <label>Longueur (m)</label><input type="number" id="long" value="10">
+      <label>Largeur (m)</label><input type="number" id="larg" value="8">
+      <label>Épaisseur (cm)</label><input type="number" id="ep" value="15">
+      <label>Type de béton</label>
+      <select id="type"><option value="350">Béton armé - 350 kg/m³</option><option value="250">Béton de propreté - 250 kg/m³</option><option value="400">Béton haute résistance - 400 kg/m³</option></select>
+      <button class="btn" style="margin-top:15px;width:100%" onclick="calculer()">Calculer Maintenant</button>
+    </div>
+    <div class="calc-box" style="background:#111;color:#fff">
+      <h3 style="color:#ffcc00">📊 Résultat</h3>
+      <div class="result" id="res">Dkhel les mesures w klik Calculer...</div>
+      <h3 style="margin-top:18px;color:#fff">📞 Demander Devis - YASSIN PRO</h3>
+      <input id="nom" placeholder="Votre nom" style="background:#222;border-color:#333;color:#fff">
+      <input id="tel" placeholder="Téléphone / WhatsApp" style="background:#222;border-color:#333;color:#fff">
+      <button class="btn" style="margin-top:10px;width:100%" onclick="envoyer()">Envoyer sur WhatsApp 📲 +212 779 462 764</button>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div><b style="color:#fff;font-size:18px">YASSIN PRO</b><br>📍 Meknès / Fès, Maroc • 📞 +212 779 462 764 • ✉️ blurmax123@gmail.com</div>
+  <div>© 2026 YASSIN PRO - Meknès / Fès - Tous droits réservés<br>📲 WhatsApp : +212 779 462 764 • ✉️ blurmax123@gmail.com</div>
+</footer>
+<a class="whatsapp" href="https://wa.me/212779462764" target="_blank">💬</a>
+
+<script>
+function calculer(){
+  let L=parseFloat(document.getElementById('long').value)||0;
+  let l=parseFloat(document.getElementById('larg').value)||0;
+  let e=parseFloat(document.getElementById('ep').value)/100||0;
+  let dosage=parseFloat(document.getElementById('type').value);
+  let vol=L*l*e; let cimentKg=vol*dosage; let sacs=Math.ceil(cimentKg/50);
+  let sable=vol*0.4; let gravier=vol*0.8; let fer=vol*80; let prix=sacs*28 + vol*350;
+  document.getElementById('res').innerHTML='Surface : <b>'+(L*l).toFixed(1)+' m²</b><br>Volume Béton : <b>'+vol.toFixed(2)+' m³</b><br>Ciment : <b>'+cimentKg.toFixed(0)+' kg = '+sacs+' sacs</b><br>Sable : <b>'+sable.toFixed(2)+' m³</b> | Gravier : <b>'+gravier.toFixed(2)+' m³</b><br>Ferraillage : <b>'+fer.toFixed(0)+' kg</b><br>💰 Prix estimé : <b>'+prix.toFixed(0)+' DH</b>';
+}
+function envoyer(){
+  let n=document.getElementById('nom').value||'Client';
+  let t=document.getElementById('tel').value||'';
+  window.open('https://wa.me/212779462764?text='+encodeURIComponent('Salam YASSIN PRO, ana '+n+' bghit devis. Tel: '+t));
+}
+function filterDeco(cat,btn){
+  document.querySelectorAll('.deco-filter button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.deco-card').forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none';});
+}
+function choisir(nom){ window.open('https://wa.me/212779462764?text='+encodeURIComponent('Salam YASSIN PRO, 3jebni '+nom+' bghit devis décoration.')); }
+calculer();
+</script>
+</body>
+</html>
